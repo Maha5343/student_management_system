@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Jumbotron Section */
+.jumbotron {
+    background: linear-gradient(120deg, #4b79a1, #283e51);
+    color: white;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.jumbotron p {
+    font-size: 1.1rem;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-title {
+    font-size: 1.25rem;
+    color: #283e51;
+    font-weight: bold;
+}
+
+.card .card-text {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+}
+
+.card-body .btn-primary {
+    background-color: #4b79a1;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.card-body .btn-primary:hover {
+    background-color: #3b6685;
+}
+
+/* Quick Actions Styling */
+.card-body .btn-outline-success {
+    border-color: #3bb077;
+    color: #3bb077;
+    font-weight: bold;
+}
+
+.card-body .btn-outline-success:hover {
+    background-color: #3bb077;
+    color: white;
+}
+
+/* System Summary Section */
+.card.border-light {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+}
+
+.card.border-light h6 {
+    font-size: 1rem;
+    color: #283e51;
+    font-weight: bold;
+}
+
+.card.border-light p {
+    font-size: 2rem;
+    color: #4b79a1;
+    font-weight: bold;
+}
+
+/* Table Styling */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    border-bottom: 2px solid #ddd;
+    font-size: 0.9rem;
+    color: #4b79a1;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+/* Modal Styling */
+.modal-header {
+    background-color: #4b79a1;
+    color: white;
+}
+
+.modal-footer .btn-primary {
+    background-color: #4b79a1;
+    border: none;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #3b6685;
+}
+
+.modal-body .form-label {
+    color: #555;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #4b79a1;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3b6685;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+/* Footer Styling */
+footer {
+    background: #283e51;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron text-center my-4">
+    <h1 class="display-4">Welcome to Student Management System</h1>
+    <p class="lead">A comprehensive solution for managing student records, faculty information, expenses, and fees.</p>
+    <hr class="my-4">
+</div>
+
+<div class="container">
+    <div class="row text-center mb-4">
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Students</h5>
+                    <p class="card-text">View and manage student information, admission details, and contact info.</p>
+                    <a href="{{ url_for('view_students') }}" class="btn btn-primary">Manage Students</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Faculty</h5>
+                    <p class="card-text">Maintain faculty records, including subjects, contact details, and salary information.</p>
+                    <a href="{{ url_for('view_faculty') }}" class="btn btn-primary">Manage Faculty</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Expenses</h5>
+                    <p class="card-text">Track institutional expenses and manage the budget for a smooth financial operation.</p>
+                    <a href="{{ url_for('view_expenses') }}" class="btn btn-primary">Manage Expenses</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Fees</h5>
+                    <p class="card-text">Manage student fees, including fee structure and recent payments.</p>
+                    <a href="{{ url_for('view_fees') }}" class="btn btn-primary">Manage Fees</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Section for Quick Actions or Summary Statistics -->
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <h3 class="mb-4">Quick Actions</h3>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-light shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title">Add New Student</h6>
+                    <p class="card-text">Quickly add a new student to the system.</p>
+                    <a href="{{ url_for('add_student') }}" class="btn btn-outline-success">Add Student</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-light shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title">Add New Faculty</h6>
+                    <p class="card-text">Register a new faculty member.</p>
+                    <a href="{{ url_for('add_faculty') }}" class="btn btn-outline-success">Add Faculty</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-light shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title">Add New Expense</h6>
+                    <p class="card-text">Record a new expense in the system.</p>
+                    <a href="{{ url_for('add_expense') }}" class="btn btn-outline-success">Add Expense</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section for System Summary (optional) -->
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <h3 class="mb-4">System Summary</h3>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-light text-center shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title">Total Students</h6>
+                    <p class="display-4">{{ students_count }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-light text-center shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title">Total Faculty</h6>
+                    <p class="display-4">{{ faculty_count }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-light text-center shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title">Total Expenses</h6>
+                    <p class="display-4">${{ total_expenses }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-light text-center shadow-sm">
+                <div class="card-body">
+                    <h6 class="card-title">Fees Collected</h6>
+                    <p class="display-4">${{ total_fees_collected }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
