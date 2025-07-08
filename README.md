@@ -127,5 +127,5 @@ This project is for educational use only and may be reused or extended with cred
 ## 👩‍💻 Author
 
 **Maha Lakshmi**  
-Final Year B.Tech Student – Computer Science  
+B.Tech Student – Computer Science  
 GitHub: [@Maha5343](https://github.com/Maha5343)  
