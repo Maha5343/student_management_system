@@ -87,9 +87,13 @@ python main.py
 
 *Add images of the UI screens here:*
 - Dashboard view
+- ![image](https://github.com/user-attachments/assets/4c921af8-2671-4bb9-ad08-ce471771d780)
+
 - Add/Edit student form
+- ![image](https://github.com/user-attachments/assets/6b7eecaa-5d6b-4288-891e-a12f2dea58fb)
+
 - Fee payment section
-- Student search results
+- ![image](https://github.com/user-attachments/assets/417a89e6-6b99-412a-8a7f-82136cbccb3b)
 
 ---
 
